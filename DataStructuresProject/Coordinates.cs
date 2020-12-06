@@ -12,14 +12,16 @@ namespace DataStructuresProject
 
         private double coordinateY;
 
-        
-        public Coordinates(int coordinateX,int coordinateY,Random random) {
-            
 
-            this.coordinateY = random.NextDouble() * coordinateX;
-            this.coordinateX = random.NextDouble() * coordinateY;
-            
-        
+        public Coordinates(int coordinateX,int coordinateY,Random random) {
+
+       
+
+            this.coordinateX = random.Next(coordinateX)+ random.NextDouble();
+            this.coordinateY = random.Next(coordinateY) + random.NextDouble();
+
+
+
         }
 
 
