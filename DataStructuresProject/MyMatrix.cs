@@ -16,9 +16,7 @@ namespace DataStructuresProject
         private double[,] matrixN;
         Random random=new Random();
 
-
         Coordinates _coordinates;
-
 
         public  MyMatrix(int coordinateX, int coordinateY,int n,Random random) {
 
@@ -28,7 +26,6 @@ namespace DataStructuresProject
             Matrix = new double[n,2];
             
             GenerateCoordinate();
-           
             
         }
 
@@ -42,8 +39,6 @@ namespace DataStructuresProject
             MatrixProducer(this.n);
         }
         
-
-
         public void MatrixProducer(int n) {
             MatrixN = new double[n, n];
             for (int i = 0; i < n; i++) {
@@ -56,13 +51,10 @@ namespace DataStructuresProject
                     double digerDegerY = matrix[j, 1];
 
                     double Hesaplama = Math.Sqrt(Math.Pow(digerDegerX - degerX, 2)+ Math.Pow(digerDegerY - degerY,2));
-                    
-                    
+
                     MatrixN[i, j] = Math.Round(Hesaplama,2);
                     
-
                 }
-
 
 
             }
@@ -73,7 +65,7 @@ namespace DataStructuresProject
             for (int a = 0; a < n; a++) {
                 Console.Write("\t"+ a.ToString());
             }
-            //Console.Write("\t0 \t 1 \t 2 \t 3 \t 4 \t 5 \t 6 \t 7 \t 8 \t 9\n");
+            
             Console.WriteLine();
             
                 for (int i = 0; i < this.n; i++)

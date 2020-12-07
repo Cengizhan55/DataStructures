@@ -15,11 +15,11 @@ namespace DataStructuresProject
         static void Main(string[] args)
         {
             Random random = new Random();
-            Console.Write("width değeri girin amk çocukları:  ");
+            Console.Write("width değeri girin  :  ");
             width = Int32.Parse(Console.ReadLine());
-            Console.Write("height değeri girin amk çocukları:  ");
+            Console.Write("height değeri girin :  ");
             height = Int32.Parse(Console.ReadLine());
-            Console.Write("n değeri girin amk çocukları:  ");
+            Console.Write("n değeri girin :  ");
             nValue = Int32.Parse(Console.ReadLine());
 
             MyMatrix myMatrix = new MyMatrix(width, height, nValue, random);
