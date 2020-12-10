@@ -11,10 +11,8 @@ namespace DataStructuresProject
     {
         static int width=100;
         static int height=100;
-        static int nValue=10;
-
+        static int nValue = 10;
         static int nValueAnother=100;
-
 
         static void Main(string[] args)
         {
@@ -41,7 +39,5 @@ namespace DataStructuresProject
             Console.WriteLine("Çıkmak için herhangi bir tuşa basınız.");
             Console.ReadKey();   
         }
-
-         
     }
 }
